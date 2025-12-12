@@ -15,22 +15,6 @@
         <fqname>@4.0::IMapper/default</fqname>
     </hal>
     <hal format="aidl">
-        <name>vendor.mediatek.hardware.composer_ext</name>
-        <fqname>IComposerExt/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>vendor.mediatek.hardware.pq_aidl</name>
-        <fqname>IPictureQuality_AIDL/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>vendor.mediatek.hardware.videotelephony</name>
-        <fqname>IVideoTelephony/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>vendor.mediatek.hardware.nvram</name>
-        <fqname>INvram/default</fqname>
-    </hal>
-    <hal format="aidl">
         <name>android.hardware.radio.config</name>
         <fqname>IRadioConfig/default</fqname>
     </hal>
@@ -95,6 +79,10 @@
         <fqname>IBGService/default</fqname>
     </hal>
     <hal format="aidl">
+        <name>vendor.mediatek.hardware.composer_ext</name>
+        <fqname>IComposerExt/default</fqname>
+    </hal>
+    <hal format="aidl">
         <name>vendor.mediatek.hardware.mtkradioex.data</name>
         <fqname>IMtkRadioExData/slot1</fqname>
         <fqname>IMtkRadioExData/slot2</fqname>
@@ -138,6 +126,18 @@
         <name>vendor.mediatek.hardware.mtkradioex.voice</name>
         <fqname>IMtkRadioExVoice/slot1</fqname>
         <fqname>IMtkRadioExVoice/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.nvram</name>
+        <fqname>INvram/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.pq_aidl</name>
+        <fqname>IPictureQuality_AIDL/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.videotelephony</name>
+        <fqname>IVideoTelephony/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.trustonic.tee</name>
