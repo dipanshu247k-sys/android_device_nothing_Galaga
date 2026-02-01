@@ -1086,6 +1086,7 @@ on property:sys.boot_completed=1
 
     # stop bootprof
     write /proc/bootprof 0
+    stop boot_log
 
 #
 #  External Modme control related services
