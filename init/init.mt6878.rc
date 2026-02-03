@@ -1054,6 +1054,10 @@ on property:ro.boot.slot_suffix=_b
 on property:vendor.mtk.md1.status=reset
     setprop persist.vendor.atm.mdmode normal
 
+# Pocketmode
+on property:sys.touch.pocket_mode=*
+    write /proc/touchpanel/pocket_mode ${sys.touch.pocket_mode}
+
 # Dt2w
 on property:vendor.touch.double_tap_to_wake=*
     write /proc/touchpanel/gesture_mode ${vendor.touch.double_tap_to_wake}
