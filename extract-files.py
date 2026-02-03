@@ -63,7 +63,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.sensors-V2-ndk.so', 'android.hardware.sensors-V3-ndk.so'),
      ('vendor/lib64/libaaa_afassist_V2.so', 'vendor/lib64/mt6878/lib3a.ae.so', 'vendor/lib64/mt6878/lib3a.af.core.so', 'vendor/lib64/libaaa_afassistctrl.so'): blob_fixup()
         .add_needed('libshim_camera.so'),
-     ('vendor/lib64/libwa_widelens_undistort_impl.so', 'vendor/lib64/libwa_rtdof.so'): blob_fixup()
+     'vendor/lib64/libwa_widelens_undistort_impl.so': blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_createFromHandle')
         .clear_symbol_version('AHardwareBuffer_describe')
@@ -80,17 +80,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock')
         .add_needed('libbase_shim.so'),
-     ('vendor/lib64/libmorpho_RapidEffect.so', 'vendor/lib64/libAncHumanBeauty.so'): blob_fixup()
-        .clear_symbol_version('AHardwareBuffer_allocate')
-        .clear_symbol_version('AHardwareBuffer_describe')
-        .clear_symbol_version('AHardwareBuffer_lockPlanes')
-        .clear_symbol_version('AHardwareBuffer_release')
-        .clear_symbol_version('AHardwareBuffer_unlock')
-        .clear_symbol_version('AHardwareBuffer_lock'),
      'vendor/lib64/mt6878/libneuron_adapter_mc.so': blob_fixup()
         .clear_symbol_version('AHardwareBuffer_describe'),
-     'vendor/lib64/libntcamskia.so': blob_fixup()
-        .add_needed('libnativewindow.so'),
      'vendor/lib64/libnvram.so': blob_fixup()
         .add_needed('libbase_shim.so'),
      'vendor/lib64/mt6878/libmtkcam_hal_aidl_common.so': blob_fixup()
@@ -100,7 +91,6 @@ blob_fixups: blob_fixups_user_type = {
      'vendor/lib64/hw/mt6878/android.hardware.graphics.allocator-V2-mediatek.so',
      'vendor/lib64/hw/mt6878/android.hardware.graphics.mapper@4.0-impl-mediatek.so',
      'vendor/lib64/hw/mt6878/mapper.mediatek.so',
-     'vendor/lib64/libaimemc.so',
      'vendor/lib64/libcodec2_fsr.so',
      'vendor/lib64/libcodec2_vpp_AIMEMC_plugin.so',
      'vendor/lib64/libcodec2_vpp_AISR_plugin.so',
