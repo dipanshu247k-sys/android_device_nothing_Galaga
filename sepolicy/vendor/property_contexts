@@ -1,3 +1,6 @@
+# dt2w
+get_prop(vendor_init, vendor_power_prop)
+
 # Fingerprint
 persist.vendor.goodix.dump_data     u:object_r:vendor_fingerprint_prop:s0
 persist.vendor.overlay.fp_algo      u:object_r:vendor_fingerprint_prop:s0

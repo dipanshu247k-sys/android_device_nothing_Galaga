@@ -1054,6 +1054,10 @@ on property:ro.boot.slot_suffix=_b
 on property:vendor.mtk.md1.status=reset
     setprop persist.vendor.atm.mdmode normal
 
+# Dt2w
+on property:vendor.touch.double_tap_to_wake=*
+    write /proc/touchpanel/gesture_mode ${vendor.touch.double_tap_to_wake}
+
 # Logger
 service boot_log /system/bin/logcat -b all -D -f /metadata/boot_log.txt
     class main
