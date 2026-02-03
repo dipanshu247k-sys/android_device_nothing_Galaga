@@ -1,5 +1,5 @@
-# dt2w
-get_prop(vendor_init, vendor_power_prop)
+# Dt2w
+vendor.touch.double_tap_to_wake    u:object_r:vendor_power_prop:s0
 
 # Fingerprint
 persist.vendor.goodix.dump_data     u:object_r:vendor_fingerprint_prop:s0
