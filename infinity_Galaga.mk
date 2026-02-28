@@ -16,7 +16,7 @@ $(call inherit-product,  vendor/infinity/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := lineage_Galaga
+PRODUCT_NAME := infinity_Galaga
 PRODUCT_DEVICE := Galaga
 PRODUCT_MANUFACTURER := Nothing
 PRODUCT_BRAND := Nothing
@@ -24,6 +24,8 @@ PRODUCT_MODEL := A001
 
 INFINITY_MAINTAINER := "WHOAMI"
 TARGET_HAS_UDFPS := true
+WITH_GAPPS := true
+TARGET_BUILD_GOOGLE_TELEPHONY := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-nothing
 
